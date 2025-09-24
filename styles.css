@@ -1,0 +1,215 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+:root {
+    --Teal :#4CA7C0;
+    --Purple: #484FB7;
+    --Lavender: #6B8FE7;
+    --Yellow: #E9BB57; 
+    --Pink:#D9526F;
+    --Dark-gray:#1E1E1E; 
+    --White:#ffffff; 
+
+    --box-shadow-sm: -3px 3px 7px var(--med-gray);
+	--box-shadow-lg: -6px 6px 10px var(--med-gray);
+}
+
+h1, h2{
+    font-family: 'Kavoon';
+}
+
+p, h3, h4, nav, li, th, td, a {
+    font-family: 'Inter';
+}
+
+h1 {
+    font-size: 3em;
+    text-align: center;
+    color: var(--White);
+    padding-bottom: 1rem;
+}
+
+h2 {
+    font-size: 2em;
+    color: var(--White);
+    padding-bottom: 8px;
+}
+
+h3 {
+    font-size: 1.5em;
+    color: var(--Yellow);
+    font-weight: bold;
+    padding-bottom: 8px;
+}
+
+H4 {
+    font-size: 1.15em;
+    font-weight: bold;
+    color: var(--Purple);
+    padding-bottom: 8px;
+}
+
+body {
+    margin: 0;
+    background-color: var(--Lavender);
+    color: var(--Dark-gray);
+}
+
+header, main, footer {
+    background-color: var(--Purple);
+    padding: 5rem;
+    width: calc(100%-10rem);
+    max-width: 920px;
+    margin: 0 auto;
+}
+
+header p {
+    font-style: italic;
+    text-align: center;
+    color: var(--White);
+    padding-bottom: 3rem;
+}
+
+nav {
+    background-color: var(--Yellow);
+    text-align: center;
+}
+
+nav h2 {
+    color: var(--Dark-gray);
+    font-family: 'Inter';
+    font-variant-caps: all-small-caps;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.5em;
+    padding: 1rem;
+}
+
+nav ul{
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1;
+    gap: 1rem;
+}
+
+nav a {
+    display: block;
+    padding: 1rem;
+    background-color: var(--White);
+    padding: 16px;
+}
+
+section {
+    background-color: var(--White);
+    display: block;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 16px;
+}
+
+#chooseUs, #firstSteps {
+    background-color: var(--Pink);
+    border-radius: 0;
+}
+
+#chooseUs ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 1rem;
+}
+
+#pricing,  #coaching, #workshops, #online{
+    background-color: var(--Purple);
+    
+}
+
+table {
+    background-color: var(--Yellow);
+    margin: auto;
+    border: 2px solid var(--Yellow);
+}
+
+th{
+    padding: 1rem;
+    font-variant-caps: all-small-caps;
+    font-weight: bold;
+}
+
+td {
+    background-color: var(--White);
+    text-align: center;
+    padding: 1em;
+    border: 2px solid var(--Yellow);
+}
+
+#firstSteps p {
+    color: var(--White);
+    padding-bottom: 1rem;
+}
+
+#firstSteps a {
+    display: block;
+    background-color: var(--White);
+    color: var(--Dark-gray);
+    font-variant-caps: all-small-caps;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    padding: 1rem;
+    border-radius: 16px;
+    box-shadow: var(--box-shadow-lg);
+}
+
+#firstSteps a:hover {
+    box-shadow: var(--box-shadow-sm);
+}
